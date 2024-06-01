@@ -155,8 +155,8 @@ body{
     }
 
     .mainSearch{
-        background-color: #01367a;
-        height: 50vh;
+        background-color: #541232;
+        height: 25vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -293,7 +293,7 @@ body{
             box-sizing: content-box;
             margin-top: 50px;
             margin-left: 20px;
-            background-color: #9f3647;
+            background-color: #541232;
             color: #ffffff;
             padding: 1rem 1rem;
             border-radius: 5px;
@@ -304,7 +304,7 @@ body{
             transition: transform 0.3s, box-shadow 0.3s;
     
             &:hover {
-                background-color: #9f3647;
+                background-color: #541232;
                 transform: scale(0.95);
                 box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
             }
