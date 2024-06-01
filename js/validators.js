@@ -19,35 +19,33 @@ const cleanError = input =>{
     errorText.innerText = "";
 }
 
+const form= document.querySelector('form')
+
+form.querySelectorAll('input').forEach(input =>{
+    input.addEventListener("change",()=>{
+        const value = input.value.trim();//limpia espacios vacios al principio y al final
+
+        if (value != "") {
+            cleanError(input);
+        }
+    })
+});
+
+// Validar campos
+function validateForm (input, message){
+    const input = document.getElementById("input")
+    const value = input.value.trim()
+
+    if (value == ""){
+        showError(input,message);
+        return false;
+    }else{
+        cleanError(input)
+    }
+}
 
 
-// formulario.addEventListener('submit', (event) => {
-//     const email = document.getElementById('email').value;
-//     const password = document.getElementById('password').value;
-
-//     // Validación de correo electrónico
-//     if (email === '') {
-//         alert('El campo de correo electrónico es obligatorio.');
-//         return;
-//     }
-
-//     if (!validarEmail(email)) {
-//         alert('El correo electrónico no es válido.');
-//         return;
-//     }
-
-//     // Validación de contraseña
-//     if (password === '') {
-//         alert('El campo de contraseña es obligatorio.');
-//         return;
-//     }
-
-//     // Si la validación es exitosa, se envia el formulario al servidor
-//     alert('Iniciando sesion');
-//     formulario.submit();
-// });
-
-// function validarEmail(email) {
-//     // Implementar la lógica para validar el formato del correo electrónico
-//     return /^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email);
-// }
+function isEmail(email) {
+    // Implementar la lógica para validar el formato del correo electrónico
+    return /^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email);
+}
