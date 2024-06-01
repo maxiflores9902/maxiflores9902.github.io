@@ -28,30 +28,47 @@
     </header>
 
     <main id="main" class="main">
-        <section class="mainSector">
+        <section data-aos="zoom-in"  data-aos-duration="1000"  class="mainSector">
             <h1 class="firstTitle">Películas y series ilimitadas <br> en un solo lugar</h1>
             <h2 class="secondTitle">Disfruta donde quieras. <br> Cancela en cualquier momento</h2>
             <a class="registrationButton" href="./html/registry.html">Regristrarse</a>
         </section>
 
-        <section class="mainSearch">
+        <section data-aos="fade-up" data-aos-offset="300" data-aos-delay="50" data-aos-duration="1000" class="mainSearch">
             <h2 class="titleSearch">¿Que estas buscando para ver?</h2>
             <form class="searchMovie">
-                <input class="inputSearch" type="text" placeholder="Buscar...">
+                <input class="inputSearch" type="text" placeholder="Buscar..." id="search" name="search">
                 <input class="buttonSearch" type="submit" value="Buscar">
             </form>
+        </section>
+
+        <section id="trends" data-aos="fade-up" data-aos-offset="400" data-aos-delay="100" data-aos-duration="1000" class="movieTrend">
+            <h3 class="titleSection">Tendencias de la semana</h3>
+            <div class="movies" id="trendContainer">
+                <!-- cargamos las pelis tendencia -->
+            </div>
+            <button class="boton anterior">Anterior</button>  
+            <button class="boton siguiente">Siguiente</button>
+        </section>
+
+        <section data-aos="fade-up" data-aos-offset="200" data-aos-delay="100" data-aos-duration="2000" class="acclaimedMovies">
+            <h3 class="titleSection">Las más aclamadas</h3>
+            <div class="acclaimed" id="acclaimedContainer">
+                <!-- cargamos las pelis más aclamadas -->
+            </div>
         </section>
     </main>
     <footer class="footer">
         <h2>Redes sociales</h4>
         <nav class="socialNetworks">
             <ul class="navList">
-                <li class="itemList"><a href="https://github.com/maxiflores9902/proyecto-web"><i class="fab fa-github"></i></a></li>
+                <li class="itemList"><a href="https://github.com/maxiflores9902/maxiflores9902.github.io"><i class="fab fa-github"></i></a></li>
                 <li class="itemList"><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
                 <li class="itemList"><a href="https://twitter.com/home"><i class="fab fa-twitter"></i></a></li>
                 <li class="itemList"><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
             </ul>
         </div>
     </footer>
+    <script src="/js/api-movies.js"></script>
 </body>
 </html>
