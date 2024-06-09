@@ -265,8 +265,8 @@ body{
                     }
 
                     &:hover {
-                        box-shadow: 0 0 30px #9f3648cd;
-                        transform: scale(0.9);
+                        box-shadow: 0 0 30px #541232;
+                        transform: scale(1.2);
 
                     }
 
