@@ -28,6 +28,7 @@ body{
         font-size: 1.1rem;
         text-decoration: none;
         text-align: center;
+        color: white;
     }
 
     .label {
@@ -53,17 +54,11 @@ body{
         border-radius: 5px;
         margin-bottom: 15px;
         font-weight: 500;
+        color: white;
 
         &:hover{
             background-color: #541232;
         }
     }
 
-}
-
-/* Estilos para las etiquetas */
-.label {
-    /* Muestra las etiquetas en una nueva línea */
-    font-weight: 500;
-    font-size: 1rem;
 }
