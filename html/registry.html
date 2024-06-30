@@ -12,19 +12,31 @@
     <h1 class="firstTitle">Registro</h1>
 
     <form class="form">
-        <label class="label" for="nombre">Nombre completo:</label>
-        <input class="input" type="text" id="nombre" name="nombre" required>
-
-        <label class="label" for="correo">Correo electrónico:</label>
-        <input class="input" type="email" id="correo" name="correo" required>
-
-        <label class="label" for="contrasena">Contraseña:</label>
-        <input class="input" type="password" id="contrasena" name="contrasena" required>
-
-        <label class="label" for="confirmarContrasena">Confirmar contraseña:</label>
-        <input class="input" type="password" id="confirmarContrasena" name="confirmarContrasena" required>
-
-        <button class="button" type="submit">Registrarse</button>
+        <div>
+            <input class="input" placeholder="Nombre" id="nombre" name="nombre" required>
+            <p class="error-text"></p>
+        </div>
+        <div>
+            <input class="input" placeholder="Apellido" id="apellido" name="apellido" required>
+            <p class="error-text"></p>
+        </div>
+        <div>
+            <input class="input" placeholder="Email" id="email" name="email" required>
+            <p class="error-text"></p>
+        </div>
+        <div>
+            <input class="input" placeholder="Contraseña" id="contrasena" name="contrasena" required>
+            <p class="error-text"></p>
+        </div>
+        <div>
+            <input class="input" placeholder="Repetir contraseña" id="confirmarContrasena" name="confirmarContrasena" required>
+            <p class="error-text"></p>
+        </div>
+        <div>
+            <button class="button" type="submit">Registrarse</button>
+        </div>
+        
+        
     </form>
 </body>
 
